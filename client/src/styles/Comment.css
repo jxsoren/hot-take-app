@@ -1,0 +1,23 @@
+/* <div className="comment-container">
+<p className="comment"> 
+@
+<span className="comment-username">
+    { commentPoster }
+</span>
+: { comment } </p>
+</div> */
+
+.comment-container {
+
+}
+
+.comment {
+
+    word-wrap: break-word;
+    line-break: strict;
+    overflow-wrap: break-word;
+}
+
+.comment-username {
+
+}

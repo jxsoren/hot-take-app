@@ -1,0 +1,101 @@
+.issue {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    margin-top: 10px;
+    min-width: 600px;
+    max-width: 2200px;
+    word-wrap: break-word;
+    padding: 20px
+}
+
+.issue h2 {
+    font-size: 1.5em;
+}
+
+.issue h1 {
+    font-size: 2.5em;
+}
+
+.issue button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden; 
+}
+
+.issue-button-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.edit-button {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #f7d80f;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+
+  }
+  
+  .edit-button:hover {
+    background: #ffbb33;
+    background-image: -webkit-linear-gradient(top, #ffbb33, #edd671);
+    background-image: -moz-linear-gradient(top, #ffbb33, #edd671);
+    background-image: -ms-linear-gradient(top, #ffbb33, #edd671);
+    background-image: -o-linear-gradient(top, #ffbb33, #edd671);
+    background-image: linear-gradient(to bottom, #ffbb33, #edd671);
+    text-decoration: none;
+  }
+
+
+.delete-button {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #cc0822;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+  
+.delete-button:hover {
+    background: #f50a29;
+    background-image: -webkit-linear-gradient(top, #f50a29, #f2006d);
+    background-image: -moz-linear-gradient(top, #f50a29, #f2006d);
+    background-image: -ms-linear-gradient(top, #f50a29, #f2006d);
+    background-image: -o-linear-gradient(top, #f50a29, #f2006d);
+    background-image: linear-gradient(to bottom, #f50a29, #f2006d);
+    text-decoration: none;
+}
+
+.display-votes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.display-upvote {
+    color: limegreen
+}
+
+.display-downvote {
+    color: red
+}
+
+.take-by {
+
+}
+
+.author-username {
+    color: yellow
+}

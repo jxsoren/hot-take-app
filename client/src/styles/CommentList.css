@@ -1,0 +1,10 @@
+.comment-list {
+    padding: 20px;
+    width: 600px
+}
+
+
+.no-comments{
+   line-break: strict;
+   padding: 20px
+}

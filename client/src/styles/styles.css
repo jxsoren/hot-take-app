@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #043565;
+    color: white;
+    text-align: center
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    outline: none;
+    text-decoration: none;
+  }
+
+
+

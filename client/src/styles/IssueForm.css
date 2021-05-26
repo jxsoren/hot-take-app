@@ -1,0 +1,52 @@
+.issue-form {
+    margin-bottom: 20px;
+}
+
+.issue-form input {
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  padding: 10px;
+  font-size: 1em;
+  color: #676767;
+}
+
+.post-input {
+    width: 300px;  
+}
+
+.edit-input {
+    width: 100%; 
+}
+
+.issue-form label {
+    font-size: 1.5em;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+label, input {
+    display: block; 
+}
+
+.issue-form button {
+    background-color: #3339;
+    color: white;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 1.29em;
+}
+
+.edit-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.submit-button {
+    color: red
+}
+
+

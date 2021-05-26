@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    background-color: #3339;
+}
+
+.navbar * {
+    color: white;
+}
+
+.logout-btn {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden; 
+}
