@@ -9,7 +9,7 @@ require("dotenv").config()
 const path = require("path")
 const secret = process.env.SECRET || "hello man cryo frozen"
 
-// mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
 
 app.use(express.json())
 app.use(morgan('dev'))
