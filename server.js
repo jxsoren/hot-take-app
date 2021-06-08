@@ -17,6 +17,11 @@ mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
+
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useFindAndModify', false);
+mongoose.set('useCreateIndex', true);
+
 const db = mongoose.connection
 db.on('error', error => console.error(error))
 db.once('open', MONGO_URI => console.log('Connected to Database'))
@@ -24,16 +29,16 @@ db.once('open', MONGO_URI => console.log('Connected to Database'))
 
 const port = process.env.PORT || 8000;
 
-mongoose.connect(
-    'mongodb://localhost:27017/rock_the_vote',
-    {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useCreateIndex: true,
-        useFindAndModify: false
-    },
-    () => console.log('Connected to the Database')
-)
+// mongoose.connect(
+//     'mongodb://localhost:27017/rock_the_vote',
+//     {
+//         useNewUrlParser: true,
+//         useUnifiedTopology: true,
+//         useCreateIndex: true,
+//         useFindAndModify: false
+//     },
+//     () => console.log('Connected to the Database')
+// )
 
 app.use('/auth', require('./routes/authRouter.js'))
 
