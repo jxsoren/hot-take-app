@@ -1,12 +1,12 @@
+require('dotenv').config({ path: 'env file path' })
 const express = require('express')
 const app = express()
-require('dotenv').config({ path: 'env file path' })
 const morgan = require('morgan')
 const mongoose = require('mongoose')
 const expressJwt = require('express-jwt')
 
 const path = require("path")
-const SECRET = process.env.SECRET || "hello man cryo frozen"
+const SECRET = process.env.SECRET || "strafe panda blinds cool man hame fool haha frame"
 
 app.use(express.json())
 app.use(morgan('dev'))
