@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+require('dotenv').config({ path: 'env file path' })
 const dotenv = require('dotenv')
 dotenv.config()
 const morgan = require('morgan')
