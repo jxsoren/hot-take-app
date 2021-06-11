@@ -1,12 +1,18 @@
-require('dotenv').config({ path: 'env file path' })
 const express = require('express')
 const app = express()
+require('dotenv').config()
 const morgan = require('morgan')
 const mongoose = require('mongoose')
 const expressJwt = require('express-jwt')
+require('dotenv').config({ path: 'env file path' })
+
+app.use('/api', expressJwt({ secret: process.env.SECRET, algorithms:['HS256'] }))
+
+// const secret = process.env.SECRET || "strafe pandafff blinds cool man hame fool haha frame"
+
+app.use('/api/issues', require('./routes/issueRouter.js'))
 
 const path = require("path")
-const SECRET = process.env.SECRET || "strafe panda blinds cool man hame fool haha frame"
 
 app.use(express.json())
 app.use(morgan('dev'))
@@ -30,8 +36,6 @@ const port = process.env.PORT || 5000;
         app.use('/auth', require('./routes/authRouter.js'))
         
         // gatekeeper 
-        app.use('/api', expressJwt({ secret: process.env.SECRET, algorithms:['HS256'] }))
-        app.use('/api/issues', require('./routes/issueRouter.js'))
         
         app.use((err, req, res, next) => {
             console.log(err)
