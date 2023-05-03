@@ -5,6 +5,9 @@ import { App } from './App'
 import  UserProvider from './context/UserProvider.js'
 import ApplicationProvider from './context/ApplicationProvider.js'
 import './styles/styles.css'
+import { disableReactDevTools } from '@fvilers/disable-react-devtools'
+
+if (process.env.NODE_ENV === 'production') disableReactDevTools()
 
 const root = document.getElementById('root')
 ReactDOM.render(
